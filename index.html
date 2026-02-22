@@ -12,20 +12,27 @@
 <body>
     <div class="container">
 <header>
-    <form>
-        <input type="search" placeholder="Entera city.." required />
-        <input type="submit" value="search"/>
+    <form class="search-form">
+        <input type="search" placeholder="Entera city.." required class="search-form-input"/>
+        <input type="submit" value="search" class="search-form-button"/>
     </form>
 </header>
 <main>
+    <div class="weater-app-data">
     <div>
-        <p>
+        <h1 class="weater-app-city">Paris</h1>
+        <p class="weater-app-details">
             Tuesday 15:43, scattered clouds
             <br />
-            Humidity: 82%, Wind: 3.1 km/h
+            Humidity: <strong>82%</strong>, Wind: <strong>3.1 km/h</strong>
         </p>
     </div>
-    <div>⛅12&deg;C</div>
+    <div class="weater-app-temperature-container">
+        <div class="weater-app-icon"> ⛅</div>
+        <div class="weater-app-temperature"> 12</div>
+        <div class="weater-app-unit"> &deg;C</div>
+    </div>
+</main>
 <footer>
     This project was coded by 
     <a href="https://www.shecodes.io/graduates/178161-milanda-kapeyi" target="_blank">Milanda,
